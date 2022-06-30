@@ -35,7 +35,8 @@ class Product extends database implements crud
 
     public function read()
     {
-        # code...
+        $query = "SELECT * FROM `Products`";
+        return $this->runDQL($query);
     }
 
     public function update()

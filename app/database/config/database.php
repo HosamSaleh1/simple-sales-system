@@ -16,11 +16,11 @@ class database
     {
         // connection
         $this->conn = new mysqli($this->hostname, $this->username, $this->password, $this->database);
-        if ($this->conn->connect_errno) {
-            die('connection failed: ' . $this->conn->connect_errno);
-        } else {
-            echo 'ok';
-        }
+        // if ($this->conn->connect_errno) {
+        //     die('connection failed: ' . $this->conn->connect_errno);
+        // } else {
+        //     echo 'ok';
+        // }
     }
     // insert - update - delete
     public function runDML($query)

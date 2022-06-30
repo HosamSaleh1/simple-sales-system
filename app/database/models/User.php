@@ -25,6 +25,7 @@ class User extends database implements crud
     {
         $query = "INSERT INTO `Users` (`name_ar`,`name_en`,`tax_num`,`address`,`phone`,`email`)
         VALUES ($this->name_ar,$this->name_en,$this->tax_num,$this->address,$this->phone,$this->email)";
+        print_r($this->runDML($query));die;
         return $this->runDML($query);
     }
 
@@ -48,7 +49,8 @@ class User extends database implements crud
 
     public function read()
     {
-        # code...
+        $query = "SELECT * FROM `Users`";
+        return $this->runDQL($query);
     }
 
     public function update()

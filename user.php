@@ -32,6 +32,7 @@ if ($_POST) {
     }
     if (empty($message)) {
       $addResult = $userObject->create();
+      print_r($addResult);die;
       if (!$addResult) {
         $message = "<div class='alert alert-danger text-center'>SomeThing Went Wrong</div>";
       } else {
