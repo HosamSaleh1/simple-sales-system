@@ -24,8 +24,7 @@ class User extends database implements crud
     public function create()
     {
         $query = "INSERT INTO `Users` (`name_ar`,`name_en`,`tax_num`,`address`,`phone`,`email`)
-        VALUES ($this->name_ar,$this->name_en,$this->tax_num,$this->address,$this->phone,$this->email)";
-        print_r($this->runDML($query));die;
+        VALUES ('$this->name_ar','$this->name_en','$this->tax_num','$this->address','$this->phone','$this->email')";
         return $this->runDML($query);
     }
 

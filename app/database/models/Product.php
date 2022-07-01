@@ -23,7 +23,7 @@ class Product extends database implements crud
     public function create()
     {
         $query = "INSERT INTO `Products` (`name_ar`,`name_en`,`desc_ar`,`desc_en`,`price`,`barcode`)
-        VALUES ($this->name_ar,$this->name_en,$this->desc_ar,$this->desc_en,$this->price,$this->barcode)";
+        VALUES ('$this->name_ar','$this->name_en','$this->desc_ar','$this->desc_en',$this->price,$this->barcode)";
         return $this->runDML($query);
     }
 
@@ -36,6 +36,12 @@ class Product extends database implements crud
     public function read()
     {
         $query = "SELECT * FROM `Products`";
+        return $this->runDQL($query);
+    }
+
+    public function productDetails($id)
+    {
+        $query = "SELECT * FROM `Products` WHERE `id` = $id";
         return $this->runDQL($query);
     }
 

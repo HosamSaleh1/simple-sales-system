@@ -25,7 +25,7 @@ Trait Validation
     {
         $errors = [];
         if(!preg_match($pattern,$field)){
-                $errors['pattern'] = "<div class='alert alert-danger text-center'> Wrong $name format</div>";
+                $errors['pattern'] = "<div class='alert alert-danger text-center'> Wrong $name Format</div>";
             }
         return $errors;
         // [] => no errors

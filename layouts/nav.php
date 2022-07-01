@@ -19,6 +19,7 @@
                                     <li><a href="user.php">ADD User</a></li>
                                     <li><a href="product.php">ADD Product</a></li>
                                     <li><a href="sales.php">Buy</a></li>
+                                    <li><a href="salesReport.php">Sales Report</a></li>
                                 </ul>
                             </nav>
                         </div>

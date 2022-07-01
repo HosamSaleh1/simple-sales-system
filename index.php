@@ -13,6 +13,7 @@ include_once 'layouts/breadcrumb.php';
             <button type='button' class='btn btn-outline-success btn-block' onclick="window.location.href='user.php'">ADD User</button>
             <button type='button' class='btn btn-outline-success btn-block' onclick="window.location.href='product.php'">ADD Product</button>
             <button type='button' class='btn btn-outline-success btn-block' onclick="window.location.href='sales.php'">Buy</button>
+            <button type='button' class='btn btn-outline-success btn-block' onclick="window.location.href='salesReport.php'">Sales Report</button>
         </div>
     </div>
 </div>
