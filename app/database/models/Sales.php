@@ -30,6 +30,7 @@ class Sales extends database implements crud
 
     public function read()
     {
+        // $query = "SELECT * FROM `SalesDetails`";
         $query = "SELECT * FROM `SalesDetails`";
         return $this->runDQL($query);
     }

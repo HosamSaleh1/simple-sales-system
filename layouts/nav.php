@@ -7,7 +7,7 @@
                     <div class="logo">
                         <a href="index.php">
                             <!-- <img alt="" src="assets/img/logo/logo.png"> -->
-                            <img alt="" src="assets/img/logo/logo2.png">
+                            <img alt="" src="assets/img/logo/logo2.jpg" style='max-width: 150px;'>
                         </a>
                     </div>
                 </div>
