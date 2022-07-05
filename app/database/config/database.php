@@ -6,10 +6,14 @@ use mysqli;
 
 class database
 {
-    private $hostname = 'localhost';
-    private $username = 'root';
-    private $password = '';
-    private $database = 'raitotechSales';
+    // private $hostname = 'localhost';
+    // private $username = 'root';
+    // private $password = '';
+    // private $database = 'raitotechSales';
+    private $hostname = 'us-cdbr-east-06.cleardb.net';
+    private $username = 'b4a6e49eef87c3';
+    private $password = '39ef3371';
+    private $database = 'heroku_c8d2fc90b3bf5a0';
     private $conn;
 
     function __construct()
